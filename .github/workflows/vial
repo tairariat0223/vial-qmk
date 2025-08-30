@@ -1,11 +1,15 @@
 name: Build Vial QMK Firmware
 
 on:
-  workflow_dispatch:   # 手動実行できるようにする
+  workflow_dispatch:  
+  push:
+    branches:
+      - vial          
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
