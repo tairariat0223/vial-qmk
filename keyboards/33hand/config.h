@@ -22,6 +22,6 @@
 #define DEBOUNCE 5
 
 /* Vial 固有設定 */
-#define VIAL_KEYBOARD_UID {0xBD, 0x6E, 0xDA, 0x61, 0xA9, 0xF0, 0xEB, 0xD3}
-#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
-#define VIAL_UNLOCK_COMBO_COLS {0, 1}
+//#define VIAL_KEYBOARD_UID {0xBD, 0x6E, 0xDA, 0x61, 0xA9, 0xF0, 0xEB, 0xD3}
+//#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
+//#define VIAL_UNLOCK_COMBO_COLS {0, 1}
