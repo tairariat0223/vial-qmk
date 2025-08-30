@@ -1,0 +1,32 @@
+name: Build Vial QMK Firmware (RP2040)
+
+on:
+  workflow_dispatch:  # ← 手動トリガー用
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip git gcc-arm-none-eabi binutils-arm-none-eabi
+          python3 -m pip install qmk
+
+      - name: Setup QMK
+        run: |
+          qmk setup --yes
+
+      - name: Compile firmware (33hand/vial for RP2040)
+        run: |
+          qmk compile -kb 33hand -km vial
+
+      - name: Upload UF2 firmware
+        uses: actions/upload-artifact@v3
+        with:
+          name: 33hand-vial-rp2040
+          path: "*.uf2"
