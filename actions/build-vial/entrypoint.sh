@@ -9,7 +9,7 @@ echo "🔧 Building Vial firmware for $KEYBOARD:$KEYMAP"
 # あなたのフォークからクローン
 if [ ! -d "vial-qmk" ]; then
   echo "Cloning your forked vial-qmk..."
-  git clone --depth 1 --branch vial https://github.com/tairariat0223/vial-qmk.git
+  git clone --depth 1 --branch cleanup-keyboards https://github.com/tairariat0223/vial-qmk.git
 fi
 
 cd vial-qmk
