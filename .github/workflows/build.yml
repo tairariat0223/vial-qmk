@@ -12,7 +12,7 @@ jobs:
 
       # ご自身のリポジトリをclone
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: cleanup-keyboards
 
       # ビルドしたいkeyboard, rev, keymapを指定
       - name: QMK Build firmware Action
