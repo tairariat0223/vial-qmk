@@ -4,28 +4,33 @@ set -e
 KEYBOARD=$1
 KEYMAP=$2
 
-echo "Building Vial firmware for $KEYBOARD:$KEYMAP"
+echo "🔧 Building Vial firmware for $KEYBOARD:$KEYMAP"
 
-# Clone if not exists
+# あなたのフォークからクローン
 if [ ! -d "vial-qmk" ]; then
-  git clone --depth 1 https://github.com/vial-kb/vial-qmk.git
+  echo "Cloning your forked vial-qmk..."
+  git clone --depth 1 --branch vial https://github.com/tairariat0223/vial-qmk.git
 fi
 
 cd vial-qmk
 
-# QMK_HOMEを強制設定（重要！）
+# QMK_HOMEを設定
 export QMK_HOME=$(pwd)
 
-# QMKを明示的に初期化
+# 確認（デバッグ用）
+echo "📁 Checking keyboards folder..."
+ls keyboards || true
+ls keyboards/* || true
+
+# QMK環境セットアップ
 qmk setup -y
 
-# keyboards/33hand が存在するか確認
-echo "Checking keyboards folder..."
-ls keyboards | grep "$KEYBOARD" || (echo "Keyboard folder not found!"; exit 1)
-
-# ファームウェアをビルド
+# ビルド実行
+echo "⚙️ Compiling firmware..."
 qmk compile -kb "$KEYBOARD" -km "$KEYMAP"
 
-# 成果物を出力フォルダにコピー
+# 成果物をコピー
 mkdir -p /github/workspace/output
 cp *.hex *.uf2 /github/workspace/output 2>/dev/null || true
+
+echo "✅ Build complete. Firmware files stored in /github/workspace/output"
