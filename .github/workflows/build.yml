@@ -16,11 +16,11 @@ jobs:
 
       # ビルドしたいkeyboard, rev, keymapを指定
       - name: QMK Build firmware Action
-        uses: ijikeman/qmk_build@v0.0.1
+        uses: tairariat0223/qmk_build@v0.0.1
         with:
-          keyboard: 'plunck'
+          keyboard: '33hand'
           rev: 'rev1'
-          keymap: 'default'
+          keymap: 'vial'
 
       # 複数指定可能
       - name: QMK Build firmware Action
