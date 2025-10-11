@@ -3,8 +3,8 @@
 #pragma once
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED       // 任意の16進値に変えてOK
-#define PRODUCT_ID   0x6060       // 任意の16進値に変えてOK
+#define VENDOR_ID    0xFEED
+#define PRODUCT_ID   0x6060
 #define DEVICE_VER   0x0001
 #define MANUFACTURER taira
 #define PRODUCT      33hand
@@ -22,6 +22,6 @@
 #define DEBOUNCE 5
 
 /* Vial 固有設定 */
-#define VIAL_KEYBOARD_UID {0xBD, 0x6E, 0xDA, 0x61, 0xA9, 0xF0, 0xEB, 0xD3}
-#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
-#define VIAL_UNLOCK_COMBO_COLS {0, 1}
+//#define VIAL_KEYBOARD_UID {0xBD, 0x6E, 0xDA, 0x61, 0xA9, 0xF0, 0xEB, 0xD3}
+//#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
+//#define VIAL_UNLOCK_COMBO_COLS {0, 1}
