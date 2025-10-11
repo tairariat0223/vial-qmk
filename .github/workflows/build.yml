@@ -16,7 +16,7 @@ jobs:
 
       # ビルドしたいkeyboard, rev, keymapを指定
       - name: QMK Build firmware Action
-        uses: tairariat0223/vial-qmk@cleanup-keyboard
+        uses: tairariat0223/vial-qmk@cleanup-keyboards
         with:
           keyboard: '33hand'
           rev: 'rev1'
