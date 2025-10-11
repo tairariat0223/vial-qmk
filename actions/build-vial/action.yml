@@ -1,0 +1,17 @@
+name: "Build Vial QMK Firmware"
+description: "Builds Vial-compatible QMK firmware for a specified keyboard and keymap."
+
+inputs:
+  keyboard:
+    description: "Keyboard folder name (e.g. 33hand)"
+    required: true
+  keymap:
+    description: "Keymap folder name (e.g. vial)"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.keyboard }}
+    - ${{ inputs.keymap }}
