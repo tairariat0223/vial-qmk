@@ -13,7 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT,
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+
-                                 KC_LCTL, KC_BSPC,  KC_SPC,   MO(1),                  
+                                 KC_LCTL, KC_BSPC,  KC_SPC,   MO(1)                  
   //                           |-----------------------------------'
 
     ),
@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
       KC_LSFT,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT,
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+
-                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT,                  
+                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT                  
   //                           |-----------------------------------'
 
     ),
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT,
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+
-                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT,                  
+                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT                  
   //                           |-----------------------------------'
 
     ),
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT,
   //|--------+--------+--------+--------+--------+--------+--------+--------+--------+
-                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT,                  
+                                 KC_LCTL, KC_BSPC,  KC_SPC, KC_LALT                  
   //                           |-----------------------------------'
 
     )
