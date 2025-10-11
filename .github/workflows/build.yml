@@ -12,11 +12,11 @@ jobs:
 
       # ご自身のリポジトリをclone
       - name: Checkout code
-        uses: cleanup-keyboards
+        uses: tairariat0223/vial-qmk@cleanup-keyboards
 
       # ビルドしたいkeyboard, rev, keymapを指定
       - name: QMK Build firmware Action
-        uses: tairariat0223/qmk_build@v0.0.1
+        uses: tairariat0223/vial-qmk@cleanup-keyboard
         with:
           keyboard: '33hand'
           rev: 'rev1'
