@@ -17,6 +17,9 @@ cd vial-qmk
 # QMK_HOMEを設定
 export QMK_HOME=$(pwd)
 
+# uv が使う Python を 3.12 に固定 251203
+export UV_PYTHON=3.12
+
 # 確認（デバッグ用）
 echo "📁 Checking keyboards folder..."
 ls keyboards || true
