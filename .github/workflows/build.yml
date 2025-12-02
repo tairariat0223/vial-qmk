@@ -3,7 +3,7 @@ name: Build Vial Firmware
 on:
   push:
     branches: [ cleanup-keybords ]
-  workflow_dispatch:  # 手動実行もOK
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          
       - name: Build Vial firmware
         uses: ./actions/build-vial
         with:
