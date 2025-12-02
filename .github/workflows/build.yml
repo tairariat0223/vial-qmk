@@ -15,7 +15,7 @@ jobs:
       - name: Build Vial firmware
         uses: ./actions/build-vial
         with:
-          keyboard: orthotenkey
+          keyboard: olthotenkey
           keymap: vial
 
       - name: Upload firmware
