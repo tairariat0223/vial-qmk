@@ -1,12 +1,19 @@
 #!/bin/bash
 set -e
 
+# GitHub Actions から渡される引数
 KEYBOARD=$1
 KEYMAP=$2
 
+if [ -z "$KEYBOARD" ] || [ -z "$KEYMAP" ]; then
+  echo "❌ Missing keyboard or keymap argument."
+  echo "Usage: $0 <keyboard> <keymap>"
+  exit 1
+fi
+
 echo "🔧 Building Vial firmware for $KEYBOARD:$KEYMAP"
 
-# あなたのフォークからクローン
+# フォークから Vial-QMK をクローン
 if [ ! -d "vial-qmk" ]; then
   echo "Cloning your forked vial-qmk..."
   git clone --depth 1 --branch cleanup-keyboards https://github.com/tairariat0223/vial-qmk.git
@@ -14,25 +21,23 @@ fi
 
 cd vial-qmk
 
-# QMK_HOMEを設定
+# QMK_HOME 設定
 export QMK_HOME=$(pwd)
+export UV_PYTHON=3.10
 
-# uv が使う Python を 3.12 に固定 251203
-export UV_PYTHON=3.12
-
-# 確認（デバッグ用）
+# デバッグ用: keyboards フォルダ確認
 echo "📁 Checking keyboards folder..."
 ls keyboards || true
 ls keyboards/* || true
 
-# QMK環境セットアップ
+# QMK 環境セットアップ
 qmk setup -y
 
-# ビルド実行
+# ファームウェアビルド
 echo "⚙️ Compiling firmware..."
 qmk compile -kb "$KEYBOARD" -km "$KEYMAP"
 
-# 成果物をコピー
+# 出力先ディレクトリ作成
 mkdir -p /github/workspace/output
 cp *.hex *.uf2 /github/workspace/output 2>/dev/null || true
 
