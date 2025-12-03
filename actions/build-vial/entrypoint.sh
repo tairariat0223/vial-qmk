@@ -22,21 +22,16 @@ cd vial-qmk
 # QMK_HOME を設定
 export QMK_HOME=$(pwd)
 
-# uv が使う Python を固定
-export UV_PYTHON=3.10
+# 仮想環境の Python を有効化
+source /opt/qmk-venv/bin/activate
 
-# デバッグ用にキーボードフォルダ一覧
+# QMK 環境セットアップ（初回のみ）
+qmk setup -y
+
+# キーボードフォルダ確認（デバッグ用）
 echo "📁 Checking keyboards folder..."
 ls keyboards || true
 ls keyboards/* || true
-
-# QMK 環境セットアップ
-if ! command -v qmk >/dev/null 2>&1; then
-  echo "⚙️ Setting up QMK environment..."
-  python3.10 -m pip install --upgrade pip
-  python3.10 -m pip install qmk
-  qmk setup -y
-fi
 
 # ファームウェアビルド
 echo "⚙️ Compiling firmware..."
