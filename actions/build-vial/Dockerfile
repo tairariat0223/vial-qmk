@@ -1,14 +1,26 @@
-FROM qmkfm/qmk_cli:latest
+FROM ubuntu:22.04
 
-# 作業ディレクトリ
+# 基本ツール
+RUN apt-get update && apt-get install -y \
+    git \
+    python3.10 \
+    python3.10-venv \
+    python3-pip \
+    make \
+    gcc \
+    unzip \
+    dfu-util \
+    dfu-programmer \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# qmk CLI インストール
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install qmk
+
 WORKDIR /github/workspace
 
-# entrypoint をコピーして実行権限付与
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# qmk CLI パスを保証
-ENV PATH="/usr/bin:${PATH}"
-
-# コンテナ起動時の実行スクリプト
 ENTRYPOINT ["/entrypoint.sh"]
