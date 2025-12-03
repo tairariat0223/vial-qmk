@@ -1,28 +1,14 @@
-FROM ubuntu:22.04
+FROM qmkfm/qmk_cli:latest
 
-# 基本ツールとクロスコンパイラ
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    git \
-    curl \
-    python3 \
-    python3-venv \
-    python3-pip \
-    unzip \
-    make \
-    gcc \
-    gcc-avr \
-    binutils-avr \
-    gcc-arm-none-eabi \
-    binutils-arm-none-eabi \
-    dfu-util \
-    dfu-programmer \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-    
-# 作業用ディレクトリ
+# 作業ディレクトリ
 WORKDIR /github/workspace
 
-# entrypoint をコピーして実行権限
+# entrypoint をコピーして実行権限付与
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+
+# qmk CLI パスを保証
+ENV PATH="/usr/bin:${PATH}"
+
+# コンテナ起動時の実行スクリプト
 ENTRYPOINT ["/entrypoint.sh"]
