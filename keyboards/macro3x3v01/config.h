@@ -3,11 +3,11 @@
 #pragma once
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x6061
-#define DEVICE_VER   0x0001
-#define MANUFACTURER "taira"
-#define PRODUCT      "macro3x3v01"
+//#define VENDOR_ID    0xFEED
+//#define PRODUCT_ID   0x6061
+//#define DEVICE_VER   0x0001
+//#define MANUFACTURER "taira"
+//#define PRODUCT      "macro3x3v01"
 
 /* Matrix size */
 #define MATRIX_ROWS 5
@@ -36,9 +36,9 @@
 #define DEBOUNCE 5
 
 /* Vial 固有設定 */
-#define VIAL_KEYBOARD_UID {0x91,0xA2,0xB3,0xC4,0xD5,0xE6,0x17,0x28}
-#define VIAL_UNLOCK_COMBO_ROWS {0, 0}
-#define VIAL_UNLOCK_COMBO_COLS {0, 1}
+//#define VIAL_KEYBOARD_UID {0x91,0xA2,0xB3,0xC4,0xD5,0xE6,0x17,0x28}
+//#define VIAL_UNLOCK_COMBO_ROWS {0, 0}
+//#define VIAL_UNLOCK_COMBO_COLS {0, 1}
 
 /* マウスカーソル設定*/
 #define MOUSEKEY_DELAY          0
