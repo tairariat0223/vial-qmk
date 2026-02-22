@@ -30,7 +30,7 @@
 #define INTERNAL_PULLUPS
 
 /* diode direction (directでも必要) */
-#define DIODE_DIRECTION COL2ROW
+//#define DIODE_DIRECTION COL2ROW
 
 /* Debounce */
 #define DEBOUNCE 5
