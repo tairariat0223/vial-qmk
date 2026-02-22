@@ -3,10 +3,12 @@
   "vendorId": "0xFEED",
   "productId": "0x6061",
   "lighting": "none",
+
   "matrix": {
     "rows": 5,
     "cols": 3
   },
+
   "layouts": {
     "keymap": [
       [
@@ -32,8 +34,9 @@
       ]
     ]
   },
+
   "vial": {
-    "keyboard_uid": [145, 162, 179, 196, 213, 230, 23, 40],
+    "keyboard_uid": [145,162,179,196,213,230,23,40],
     "unlock_combo": {
       "rows": [0, 0],
       "cols": [0, 1]
