@@ -2,6 +2,11 @@
   "keyboard_name": "macro3x3v01",
   "manufacturer": "taira",
   "maintainer": "taira",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x6061",
+        "device_version": "0x0001"
+      },
   "bootloader": "rp2040",
   "diode_direction": "COL2ROW",
   "matrix": {
