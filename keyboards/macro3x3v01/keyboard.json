@@ -14,7 +14,13 @@
         "cols": 3
       },
   "matrix_pins": {
-    "direct": ["GP29","GP14","GP13","GP28","GP8","GP26","GP12","GP11","GP9","GP10","GP27"]
+    "direct": [
+        ["GP29","GP14","GP13"],
+        ["GP28","GP8","GP26"],
+        ["GP12","GP11","GP9"],
+        [null,"GP10",null],
+        [null,"GP27",null]
+        ]
       },
   "encoder": {
     "enabled": true,
