@@ -2,26 +2,26 @@
   "keyboard_name": "macro3x3v01",
   "manufacturer": "taira",
   "maintainer": "taira",
-    "usb": {
-        "vid": "0xFEED",
-        "pid": "0x6061",
-        "device_version": "1.0.0"
-      },
+  "usb": {
+    "vid": "0xFEED",
+    "pid": "0x6061",
+    "device_version": "1.0.0"
+  },
   "bootloader": "rp2040",
   "diode_direction": "COL2ROW",
   "matrix": {
-        "rows": 5,
-        "cols": 3
-      },
+    "rows": 5,
+    "cols": 3
+  },
   "matrix_pins": {
     "direct": [
-        ["GP29","GP14","GP13"],
-        ["GP28","GP8","GP26"],
-        ["GP12","GP11","GP9"],
-        [null,"GP10",null],
-        [null,"GP27",null]
-        ]
-      },
+      ["GP29", "GP14", "GP13"],
+      ["GP28", "GP8",  "GP26"],
+      ["GP12", "GP11", "GP9"],
+      [null,  "GP10", null],
+      [null,  "GP27", null]
+    ]
+  },
   "encoder": {
     "enabled": true,
     "rotary": [
@@ -44,9 +44,8 @@
         { "matrix": [2,1], "x": 1, "y": 2 },
         { "matrix": [2,2], "x": 2, "y": 2 },
 
-        { "matrix": [3,0], "x": 1, "y": 3 },
-
-        { "matrix": [4,0], "x": 1, "y": 4 }
+        { "matrix": [3,1], "x": 1, "y": 3 },
+        { "matrix": [4,1], "x": 1, "y": 4 }
       ]
     }
   }
