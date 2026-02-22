@@ -23,8 +23,8 @@
 }
 
 /* encoder */
-#define ENCODERS_PAD_A { GP2, GP3 }
-#define ENCODERS_PAD_B { GP5, GP4 }
+//#define ENCODERS_PAD_A { GP2, GP3 }
+//#define ENCODERS_PAD_B { GP5, GP4 }
 
 /* pullups */
 #define INTERNAL_PULLUPS
