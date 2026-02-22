@@ -4,6 +4,10 @@
   "maintainer": "taira",
   "bootloader": "rp2040",
   "diode_direction": "COL2ROW",
+  "matrix": {
+        "rows": 5,
+        "cols": 3
+      },
   "matrix_pins": {
     "direct": [
       ["GP29",  "GP14",  "GP13" ],
