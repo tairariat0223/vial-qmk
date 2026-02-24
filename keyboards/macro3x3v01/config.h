@@ -2,13 +2,6 @@
 
 #pragma once
 
-/* USB Device descriptor parameter */
-//#define VENDOR_ID    0xFEED
-//#define PRODUCT_ID   0x6061
-//#define DEVICE_VER   0x0001
-//#define MANUFACTURER "taira"
-//#define PRODUCT      "macro3x3v01"
-
 /* Matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 3
@@ -22,15 +15,8 @@
     { GP27, NO_PIN, NO_PIN }  \
 }
 
-/* encoder */
-//#define ENCODERS_PAD_A { GP2, GP3 }
-//#define ENCODERS_PAD_B { GP5, GP4 }
-
 /* pullups */
 #define INTERNAL_PULLUPS
-
-/* diode direction (directでも必要) */
-//#define DIODE_DIRECTION COL2ROW
 
 /* Debounce */
 #define DEBOUNCE 5
