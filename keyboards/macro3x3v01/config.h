@@ -17,9 +17,9 @@
 #define DIRECT_PINS { \
     { GP29, GP14, GP15 }, \
     { GP28, GP8 , GP26 }, \
-    { GP12, GP11, GP9 } , \
-    { GP10,  NO_PIN, NO_PIN }, \
-    { NO_PIN, GP27, NO_PIN }  \
+    { GP12, GP11, GP9  } , \
+    { GP10, NO_PIN, NO_PIN }, \
+    { GP27, NO_PIN, NO_PIN }  \
 }
 
 /* encoder */
