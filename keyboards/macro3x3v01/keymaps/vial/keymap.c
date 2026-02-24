@@ -6,7 +6,7 @@ enum layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
-        KC_LSFT, KC_LCTL, KC_LALT,
+        KC_ESC , KC_LCTL, KC_LSFT,
         KC_BSPC, KC_UP  , KC_DEL,
         KC_LEFT, KC_0   , KC_RGHT,
                  KC_DOWN,
@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [0] = {
-        { KC_LEFT, KC_RGHT },   // encoder 0
+        { KC_RGHT, KC_LEFT },   // encoder 0
         { KC_DOWN, KC_UP   }    // encoder 1
     },
 };
