@@ -1,0 +1,27 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+
+#pragma once
+
+/* USB Device descriptor parameter */
+#define VENDOR_ID    0xFEED
+#define PRODUCT_ID   0x6061
+#define DEVICE_VER   0x0001
+#define MANUFACTURER "taira"
+#define PRODUCT      "QXCV"
+
+/* Matrix size */
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 8
+
+/* Pin configuration */
+#define MATRIX_ROW_PINS { GP6, GP7, GP8 }
+#define MATRIX_COL_PINS { GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP26 }
+#define DIODE_DIRECTION COL2ROW
+
+/* Debounce */
+#define DEBOUNCE 5
+
+/* Vial 固有設定 */
+#define VIAL_KEYBOARD_UID {0x9F, 0x42, 0xC7, 0x1D, 0xA8, 0x5E, 0x33, 0x6B}
+#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
+#define VIAL_UNLOCK_COMBO_COLS {0, 1}
