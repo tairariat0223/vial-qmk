@@ -1,25 +1,25 @@
 {
     "manufacturer": "taira",
-    "keyboard_name": "QXCV",
     "maintainer": "tairariat0223",
+    "keyboard_name": "QXCV",
+    "keyboard_folder": "qxcv",
+    "processor": "RP2040",
     "bootloader": "rp2040",
-    "diode_direction": "COL2ROW",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x6061",
+        "device_version": "1.0.0"
+    },
     "features": {
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
         "nkro": true
     },
+    "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "cols": ["GP6", "GP7", "GP8"],
-        "rows": ["GP9", "GP10", "GP11", "GP12", "GP13", "GP14", "GP15"]
-    },
-    "processor": "RP2040",
-    "url": "",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x6061",
-        "vid": "0xFEED"
+        "rows": ["GP6", "GP7", "GP8"],
+        "cols": ["GP9", "GP10", "GP11", "GP12", "GP13", "GP14", "GP15","GP26"]
     },
     "layouts": {
         "LAYOUT": {
