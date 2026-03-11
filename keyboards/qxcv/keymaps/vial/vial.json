@@ -4,7 +4,7 @@
   "productId": "0x6061",
     "matrix": {
         "rows": 3,
-        "cols": 7
+        "cols": 8
     },
     "layouts": {
         "labels": [],
