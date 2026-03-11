@@ -8,7 +8,7 @@
 
 /* Pin configuration */
 #define MATRIX_ROW_PINS { GP6, GP7, GP8 }
-#define MATRIX_COL_PINS { GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP26 }
+#define MATRIX_COL_PINS { GP26, GP15, GP14, GP13, GP12, GP11, GP10, GP9 }
 #define DIODE_DIRECTION COL2ROW
 
 /* Debounce */
