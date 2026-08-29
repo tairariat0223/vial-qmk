@@ -5,28 +5,47 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    
-    [0] = LAYOUT(
-         KC_ESC, KC_, KC_, KC_, KC_Y, KC_U, KC_I, KC_O,
-         KC_S,   KC_D, KC_F,   KC_G, KC_H, KC_J, KC_K, KC_P,
-         KC_A, KC_Z, KC_SPC, KC_B, KC_N, KC_M, KC_L
+    [0] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
+    ),
+    [1] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
+    ),
+    [2] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
 
     ),
-    [1] = LAYOUT(
-         KC_W, KC_E, KC_R,   KC_T, KC_Y, KC_U, KC_I, KC_O,
-         KC_S, KC_D, KC_F,   KC_G, KC_H, KC_J, KC_K, KC_P,
-         KC_A, KC_Z, KC_SPC, KC_B, KC_N, KC_M, KC_L
-
+    [3] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
     ),
-    [2] = LAYOUT(
-         KC_W, KC_E, KC_R,   KC_T, KC_Y, KC_U, KC_I, KC_O,
-         KC_S, KC_D, KC_F,   KC_G, KC_H, KC_J, KC_K, KC_P,
-         KC_A, KC_Z, KC_SPC, KC_B, KC_N, KC_M, KC_L
-
+    [4] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
     ),
-    [3] = LAYOUT(
-         KC_W, KC_E, KC_R,   KC_T, KC_Y, KC_U, KC_I, KC_O,
-         KC_S, KC_D, KC_F,   KC_G, KC_H, KC_J, KC_K, KC_P,
-         KC_A, KC_Z, KC_SPC, KC_B, KC_N, KC_M, KC_L
-
+    [5] = LAYOUT_all(
+         KC_NUM, KC_PSLS, KC_PAST, KC_PMNS,
+         KC_P7,  KC_P8,   KC_P9,   KC_PEQL,
+         KC_P4,  KC_P5,   KC_P6,   KC_PPLS,
+         KC_P1,  KC_P2,   KC_P3,   KC_ENT,
+         KC_0,   KC_PCMM, KC_PDOT, KC_CALC
     )
 };
