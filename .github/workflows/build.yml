@@ -23,7 +23,7 @@ jobs:
       - name: Build Vial firmware
         uses: ./actions/build-vial
         with:
-          keyboard: qxcv
+          keyboard: chotten
           keymap: vial
 
       - name: Upload firmware
