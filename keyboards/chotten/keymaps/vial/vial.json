@@ -8,7 +8,7 @@
     },
     "layouts":{
         "labels":[
-            ["tenkey","ALL1U"]
+            ["Layout","tenkey","ALL1U"]
         ],
         "keymap":[
             [
