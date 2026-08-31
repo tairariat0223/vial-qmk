@@ -7,12 +7,13 @@
 #define MATRIX_COLS 4  */
 
 /* Pin configuration */
-#define DIRECT_PINS {
-    {GP0, GP29, GP28, GP27 },
-    {GP5, GP14, GP15, GP26 },
-    {GP4, GP11, GP12, GP13 },
-    {GP3, GP7,  GP6,  GP10 },
-    {GP1, GP2,  GP8,  GP9 }
+#define DIRECT_PINS { \
+    {GP0, GP29, GP28, GP27 },\
+    {GP5, GP14, GP15, GP26 },\
+    {GP4, GP11, GP12, GP13 },\
+    {GP3, GP7,  GP6,  GP10 },\
+    {GP1, GP2,  GP8,  GP9 }\
+}
 #define DIODE_DIRECTION COL2ROW
 
 /* Debounce */
