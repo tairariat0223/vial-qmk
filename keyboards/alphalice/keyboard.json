@@ -26,7 +26,7 @@
   "encoder": {
     "enabled": true,
     "rotary": [
-      { "pin_a": "GP12", "pin_b": "GP13" },
+      { "pin_a": "GP13", "pin_b": "GP12" },
     ]
   },
   "layouts": {
