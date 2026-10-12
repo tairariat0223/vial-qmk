@@ -2,7 +2,7 @@ name: Build Vial Firmware
 
 on:
   push:
-    branches: [ cleanup-keybords ]
+    branches: [ vial ]
   workflow_dispatch:
 
 jobs:
