@@ -2,14 +2,14 @@
 
 #pragma once
 
-/* Matrix size */
+/* Matrix size
 #define MATRIX_ROWS 4
-#define MATRIX_COLS 10
+#define MATRIX_COLS 10 */
 
-/* Pin configuration */
+/* Pin configuration
 #define MATRIX_ROW_PINS { GP8, GP9, GP10, GP11 }
 #define MATRIX_COL_PINS { GP28, GP27, GP26, GP15, GP14, GP7, GP6, GP5, GP4, GP3 }
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION COL2ROW */
 
 /* Debounce */
 #define DEBOUNCE 5
